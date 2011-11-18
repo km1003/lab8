@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lab8</title>
+  <title><%= @title %></title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -11,6 +11,7 @@
 <%= render 'layouts/header' %>
 
 <div id="temp">
+	
 <div id="sidebar"><label id="labelNav">Navigation</label><br>
 <%= link_to "Home", "home" %><br/>
 <%= link_to "Login", "login" %><br/>
@@ -22,8 +23,6 @@
 </div>
 
 </div>
-
-
 
 <%= render 'layouts/footer' %>
 
