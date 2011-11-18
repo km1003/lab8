@@ -5,3 +5,83 @@
  *= require_self
  *= require_tree . 
 */
+body {
+	background-color: #CCCCCC;
+}
+#main {
+	background-color: #6699FF;
+	min-width: 400px;
+	position: absolute;
+	top: 0;
+	left: 150px;
+	right: 0;
+	min-height: 425px;
+}
+#sidebar {
+	background-color: #66FF66;
+	width: 150px;
+	min-height: 425px;
+}
+#labelBanner{
+	font-size: xx-large;
+	color: #008000;
+	font-variant: small-caps;
+}
+#labelNav{
+	text-decoration: underline;
+	font-size: large;
+	font-variant: small-caps;
+}
+#labelMain{
+	text-decoration: underline;
+	font-size: large;
+	font-variant: small-caps;
+}
+
+#labelHome {
+	text-decoration: underline;
+	font-size: 10pt;
+	color: #0000FF;
+}
+#labelLogin{
+	text-decoration: underline;
+	font-size: 10pt;
+	color: #0000FF;
+}
+#labelView{
+	text-decoration: underline;
+	font-size: 10pt;
+	color: #0000FF;
+}
+#footer {
+	background-color: #FF6600;
+	height: 40px;
+	position: relative;
+}
+#banner {
+	background-color: #FFFF99;
+	height: 40px;
+	position: relative;
+}
+#temp{
+	position:relative;
+}
+#labelCpu{
+	font-variant: small-caps;
+	text-decoration: underline;
+}
+#labelRam{
+	font-variant: small-caps;
+	text-decoration: underline;
+
+}
+#labelVideo{
+	font-variant: small-caps;
+	text-decoration: underline;
+
+}
+#labelHdd{
+	font-variant: small-caps;
+	text-decoration: underline;
+
+}

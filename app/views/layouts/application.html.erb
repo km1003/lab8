@@ -8,7 +8,24 @@
 </head>
 <body>
 
-<%= yield %>
+<%= render 'layouts/header' %>
+
+<div id="temp">
+<div id="sidebar"><label id="labelNav">Navigation</label><br>
+<label id="labelHome">Return Home</label><br>
+<label id="labelLogin">Login</label><br>
+<label id="labelView">View Orders</label><br>
+</div>
+
+<div id="main"><label id="labelMain">Main</label>
+	<%= yield %>
+</div>
+
+</div>
+
+
+
+<%= render 'layouts/footer' %>
 
 </body>
 </html>
