@@ -1,10 +1,13 @@
 Lab8::Application.routes.draw do
+
+ #root :to => 'pages#home'
+  #match '/contact', :to => 'pages#contact'
+  #match '/about', :to => 'pages#about'
+  #match '/help', :to => 'pages#help'
+  #match '/signup', :to => 'users#new'
   get "pages/home"
-
   get "pages/login"
-
   get "pages/orders"
-
   get "pages/customize"
 
   # The priority is based upon order of creation:
