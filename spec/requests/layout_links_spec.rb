@@ -2,40 +2,30 @@ require 'spec_helper'
 
 describe "LayoutLinks" do
   
-    it "should have a home page at '/customize'" do
+    it "should have a customize page at '/customize'" do
       get '/customize'
       response.should have_selector("title", :content => "Customize")
     end
   
-     it "should have a contact page at '/home'" do
+     it "should have a home page at '/home'" do
       get '/home'
       response.should have_selector("title", :content => "Home")
     end
     
-     it "should have an about page at '/login'" do
+     it "should have a login page at '/login'" do
       get '/login'
       response.should have_selector("title", :content => "Login")
     end
     
-     it "should have an about page at '/orders'" do
+     it "should have an orders page at '/orders'" do
       get '/orders'
       response.should have_selector("title", :content => "Orders")
     end
     
-#    it "should have a help page at '/help'" do
-#      get '/help'
-#      response.should have_selector("title", :content => "Help")
-#    end
-    
-#     it "should have a sign-up page at '/signup'" do
-#      get '/signup'
-#      response.should have_selector("title", :content => "Sign up")
-#    end
-    
     it "should have the right links on the layout" do
       visit root_path
       response.should have_selector('title', :content => "Home")
-      click_link "Customize this PC"
+      click_link "Customize"
       response.should have_selector('title', :content => "Customize")
       click_link "Login"
       response.should have_selector('title', :content => "Login")
