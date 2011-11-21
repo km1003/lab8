@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="author" content="Kelly Mathews"/>
+  <meta name="keywords" content="LAB8,RUBY,RAILS"/>
   <title><%= @title %></title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
@@ -18,7 +20,7 @@
 <%= link_to "Orders", orders_path %><br/>
 </div>
 
-<div id="main"><label id="labelMain">Main</label>
+<div id="main">
 	<%= yield %>
 </div>
 
