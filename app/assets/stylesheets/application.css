@@ -13,14 +13,14 @@ body {
 	min-width: 400px;
 	position: absolute;
 	top: 0;
-	left: 150px;
+	left: 125px;
 	right: 0;
-	min-height: 425px;
+	min-height: 450px;
 }
 #sidebar {
 	background-color: #66FF66;
-	width: 150px;
-	min-height: 425px;
+	width: 125px;
+	min-height: 450px;
 }
 #labelBanner{
 	font-size: xx-large;
